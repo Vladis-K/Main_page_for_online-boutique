@@ -13,8 +13,8 @@
       "id": "02",
       "title": "Jogging shorts",
       "image": "img/02.jpg",
-      "price": "$",
-      "oldPrice": "36",
+      "price": "",
+      "oldPrice": "$36",
       "nowPrice": "$12",
       "label": "hideInfo"
     },
@@ -67,8 +67,8 @@
       "id": "08",
       "title": "T-shirt lower panel",
       "image": "img/08.jpg",
-      "price": "$",
-      "oldPrice": "32",
+      "price": "",
+      "oldPrice": "$32",
       "nowPrice": "$12",
       "label": "hideInfo"
     }
