@@ -170,10 +170,6 @@ header .table {
 .hideInfo {
   display: none; }
 
-.red-red {
-  color: red;
-  font-size: 50px; }
-
 .depiction {
   margin-bottom: 35px; }
 
@@ -245,9 +241,13 @@ div.inner-sub-text {
       display: inline-block;
       color: #FFFFFF;
       text-transform: uppercase;
+      cursor: pointer;
       position: relative;
       left: 20px;
       bottom: 8px; }
+    div.inner-sub-text div:nth-child(1) a:nth-child(1):hover {
+      color: #d9d9d9;
+      text-decoration: none; }
     div.inner-sub-text div:nth-child(1) a:nth-child(2) {
       display: inline-block;
       position: absolute;
