@@ -1,0 +1,301 @@
+$text-color: #999999
+$main-color: rgb(221, 221, 221)
+
+body
+	font-family: Lato, 'Playfair Display', 'Roboto', 'Helvetica Neue', 'Segoe UI', Helvetica, Arial, sans-serif
+	color: $text-color
+	margin: 0
+	padding: 0
+
+section
+	position: relative
+
+//Upper-nav
+div.extraInfo
+	position: relative
+	top: 0
+	padding-bottom: 43px
+	color: $text-color
+	font-size: 13px
+	text-transform: uppercase
+	border-bottom: 1px solid #ededed
+
+.nav-quest
+	ul.quest
+		display: inline-block
+		margin: 0 0 0 50px
+		font-weight: 500
+		li
+			display: inline-block
+		li a
+			display: inline-block
+			padding: 3px
+			text-decoration: none
+			margin: 10px 0 0 30px
+			color: $text-color
+			text-transform: uppercase
+		li a:hover
+			color: #000
+
+ul.dropdown-toggle
+	margin-left: 2px
+
+//Main Nav
+nav.navbar
+	position: relative
+	top: 20px
+	z-index: 2
+	width: 100%
+	border-bottom: 1px solid #ededed
+
+.navbar-header
+	padding-bottom: 78px
+
+.navbar-collapse.in
+	overflow: hidden
+//Logo
+a.navbar-brand
+	position: absolute
+	left: 115px
+	bottom: 40px
+
+span.icon-bar
+	background-color: #000000
+
+.upper-nav
+	ul.switches
+		display: inline-block
+		margin: 0 32px 0 0
+	li
+		display: inline-block
+		height: 44px
+	li a
+		display: inline-block
+		text-decoration: none
+		line-height: 25px
+		margin: 10px 0 0 30px
+		color: $text-color
+		text-transform: uppercase
+		font-size: 11px
+		font-weight: 600
+	li:nth-child(2)
+		padding-right: 10px
+		border-right: 1px solid #ededed
+	li a:hover
+		color: #000
+		transition: all .4s ease
+
+.main-nav
+	position: absolute
+	overflow: hidden
+	left: 30%
+
+.main-nav li a
+	margin: 0 15px
+
+.circle
+	position: absolute
+	display: inline-block
+	margin: 3px 0 0 9px
+	width: 50px
+	height: 50px
+	border: 2px solid #177bd5
+	border-radius: 50%
+
+//icon search
+i.fa-search
+	font-size: 15px
+
+
+.navbar-nav li a:link, .main-nav li a:visited, p a:link, p a:visited
+	color: #999999
+	text-transform: uppercase
+	font-size: 12px
+	line-height: 25px
+	font-weight: 600
+	background-color: transparent
+	text-decoration: none
+	transition: all .4s ease
+
+.nav li a:hover, p a:hover
+	text-decoration: none
+	background-color: transparent
+	color: #000
+	transition: all .4s ease
+
+
+//Header
+header
+	position: relative
+	z-index: -1
+	padding-bottom: 40px
+
+h1
+	font-family: "Playfair Display"
+	color: #1c1c1c
+	margin-top: 7.6%
+	font-size: 60px
+	font-weight: 500
+
+header .table
+	display: table
+	height: 100%
+
+
+.catalog
+	margin: 47px 0 0 0
+	ul li
+		display: inline-block
+	li a
+		margin: 0 30px
+		color: $text-color
+		padding: 0
+		font-weight: 600
+		font-size: 12px
+		text-decoration: none
+		text-transform: uppercase
+	li a:hover
+		color: #000
+		transition: all .4s ease
+
+//Catalog images + description
+
+.new-clothes
+	border-radius: 12.5px
+	height: 25px
+	width: 50px
+	position: absolute
+	z-index: 15
+	left: 30px
+	top: 10px
+	padding: 0
+	font-size: 12px
+
+.hideInfo
+	display: none
+
+.red-red
+	color: red
+	font-size: 50px
+
+.depiction
+	margin-bottom: 35px
+
+.allList img
+	margin: 0 auto
+
+div.depiction
+	p:nth-child(1)
+		display: inline-block
+		margin: 20px 0 5px 0
+		font-size: 16px
+		color: #333333
+	p:nth-child(2)
+		display: block
+		margin-top: 0
+		font-size: 16px
+		span.price
+			margin: 0 0 0 5px
+			color: #999999
+		span.old_price
+			color: #999999
+			text-decoration: line-through
+		span.now_price
+			display: inline-block
+			margin: 0 0 0 5px
+			color: #fc411d
+
+//Button
+a#myButton
+	text-transform: uppercase
+	font-size: 12px
+	letter-spacing: 2px
+	font-weight: 600
+	color: $text-color
+
+//middle image
+.section-img
+	position: relative
+	margin-top: 50px
+	padding: 5px 0 10px 0
+	height: 300px
+	background-image: url("../img/subscribe.jpg")
+	background-repeat: no-repeat
+	background-position: center 0
+	width: 100%
+
+div.inner-sub-text
+	position: relative
+	padding: 62px
+	p:nth-child(1)
+		color: #333333
+		font-size: 13px
+		font-weight: 600
+		text-align: center
+		text-transform: uppercase
+	p:nth-child(2)
+		font-family: 'Playfair Display'
+		color: #FFFFFF
+		font-size: 35px
+		text-align: center
+	div:nth-child(1)
+		position: relative
+		border: 2px solid #ededed
+		margin: 25px auto
+		padding: 20px
+		width: 300px
+		height: 50px
+		border-radius: 25px
+		a:nth-child(1)
+			display: inline-block
+			color: #FFFFFF
+			text-transform: uppercase
+			position: relative
+			left: 20px
+			bottom: 8px
+		a:nth-child(2)
+			display: inline-block
+			position: absolute
+			color: #FFFFFF
+			right: 15%
+			bottom: 12px
+
+//footer
+footer
+	position: relative
+	padding: 20px 0
+	margin: 0
+	background-position: center 0
+	width: 100%
+
+.lower-nav
+	position: absolute
+	bottom: 0
+	left: 250px
+	ul
+		display: inline-block
+		margin: 0
+	li
+		display: inline-block
+	li a
+		text-decoration: none
+		margin: 10px 20px 0 30px
+		color: #1c1c1c
+		font-weight: 600
+		text-transform: uppercase
+	li:nth-child(2)
+		padding-right: 10px
+	li a:hover
+		color: #000
+		transition: all .4s ease
+
+footer p
+	color: $main-color
+	font-size: 13px
+
+div.rights
+	position: absolute
+	display: inline-block
+	right: 2%
+	bottom: 20px
+

@@ -1,0 +1,113 @@
+$extra-small: 320px
+$small: 768px
+$medium: 992px
+$large: 1200px
+
+@mixin respond-to($media)
+  @if $media == handhelds
+    @media only screen and (max-width: $extra-small)
+      @content
+
+  @else if $media == small-screens
+    @media only screen and (min-width: $extra-small + 1) and (max-width: $small - 1)
+      @content
+
+  @else if $media == medium-screens
+    @media only screen and (min-width: $small) and (max-width: $large - 1)
+      @content
+
+  @else if $media == wide-screens
+    @media only screen and (min-width: $large)
+      @content
+
+//Media parameters
+
+@include respond-to(handhelds)
+  [class~=extra-small]
+    display: none
+  [class~=extra]
+    display: none
+  .main-nav
+    position: relative
+    left: 10%
+  a.navbar-brand
+    position: absolute
+    left: 0
+    top: 0
+  .catalog
+    margin: 10px 0 0 0
+    ul
+      padding-left: 0
+    li a
+      margin: 0 2px
+  h1
+    font-size: 40px
+  div.inner-sub-text
+    padding: 40px 0 0 0
+    div:nth-child(1)
+      margin: 40px auto
+      width: 90%
+      max-height: 50%
+      a:nth-child(1)
+        left: 8px
+        font-size: 11px
+    p:nth-child(2)
+      font-size: 20px
+      text-align: center
+  footer
+    position: relative
+    padding: 10px 0 40px 0
+  div.rights
+    position: absolute
+    display: inline-block
+    right: 2%
+    bottom: 5px
+  .new-clothes
+    left: 30px
+
+
+@include respond-to(small-screens)
+  [class~=extra]
+    display: none
+  .main-nav
+    position: relative
+    left: 10%
+  a.navbar-brand
+    position: absolute
+    left: 0
+    bottom: 30px
+  .catalog li a
+      margin: 0 5px
+  .navbar-header
+    padding-bottom: 15px
+  div.inner-sub-text
+    padding: 30px 0 0 0
+    p:nth-child(2)
+      font-size: 30px
+      text-align: center
+    div:nth-child(1)
+      margin: 40px auto
+      width: 60%
+      max-height: 50%
+      a:nth-child(1)
+        left: 8px
+        font-size: 13px
+      a:nth-child(2)
+        right: 5%
+  .new-clothes
+    left: 33%
+
+@include respond-to(medium-screens)
+  [class~=extra]
+    display: none
+  .main-nav li a
+    margin: 0 5px
+  nav.navbar
+    position: relative
+    top: 0
+    height: 120px
+
+@include respond-to(wide-screens)
+
+
+
